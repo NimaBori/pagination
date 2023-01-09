@@ -1,0 +1,48 @@
+.pages {  
+
+  &__bar {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  &__navBtns {
+    font-weight: 700;
+    font-size: 1.2rem;
+    letter-spacing: 0.2rem;
+    background: transparent;
+    border: none;
+    color: white;
+    transition: all 0.5s ease-in-out;
+
+    @media (max-width: 790px) {
+      font-size: 0.7rem;
+    }
+
+    &:hover {
+      cursor: pointer;
+      color: $second-color;
+    }
+  }
+
+  &__page {
+    cursor: pointer;
+    background-color: rgba($first-color, 0.5);
+    margin: 0 0.8rem;
+    border: none;
+    color: white;
+    padding: 0.4rem 0.8rem;
+    border-radius: 15%;
+    font-weight: 500;
+    transition: all 0.5s ease-in-out;
+
+    @media (max-width: 790px) {
+      font-size: 0.7rem;
+      padding: 0.2rem 0.4rem;
+      margin: 0 0.2rem;
+    }
+  }
+
+  &__page-active {
+    background-color: $second-color;
+  }
+}
